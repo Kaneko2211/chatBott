@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+.menu-toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* Oculto en pantallas grandes */
 }
 
 .section1{
@@ -24,7 +35,8 @@ body {
 }
 
 .logo-cabe{
-    width: 120px;
+    margin-top: -100px;
+    margin-bottom: -200px;
 }
 
 .cabecera{
@@ -74,7 +86,7 @@ body {
     max-width: 1100px;
 }
 
-.h1-ex h1{
+.h1-ex h2{
     font-size:110px;
     color: white;
 }
@@ -174,12 +186,12 @@ body {
 
 .pClass3 button{
     background: #F0F0F5;
-    height: 50px;
+    height: 70px;
     color: #2359DC;
     font-weight: 700;
     font-size: 17px;
-    border-radius: 20px;
-    width: 110px;
+    border-radius: 80px;
+    width: 210px;
     border-style: none;
 }
 
@@ -497,17 +509,108 @@ body {
 }
 
 @media (max-width: 440px) {
-    .imgCont img{
-        width: 1010px;
-        height: 900px;
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+       max-width:330px;
     }
 
-    .imgCont {
-        margin-left: 900px;
-        margin-top: -400px;
+
+    .experience{
+        width: 440px;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .nav-menu li a{
+        font-size: 1em;
+
+    }
+
+    .cabecera{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 90px;
+        gap: 40px;
+    }
+
+    .h1-ex{
+        margin-left: -120px;
+        margin-top: -20px;
+    }
+    .h1-ex h2{
+        font-size: 3.0em;
+        text-align: center;
+    }
+    .p-ex{
+        margin-left: 200px;
+    }
+    
+    .p-ex p{
+        display: none;
+    }
+    .imgCont img{
+        width: 350px;
+        height: 370px;
+        margin-left: -50px;
     }
     .textoCont {
-        margin-left: 360px;
-        gap: 120px;
+        opacity: 0;
+    }
+    .pClass3{
+        margin-top: -150px;
+    }
+    .pClass3 button{
+        margin-left: -85px;
+    }
+    .pClass3 h2{
+        font-size: 1.8em;
+        text-align: center;
+        margin-left: -90px;
+    }
+    .pClass3 p{
+        font-size: 1em;
+        text-align: center;
+        margin-left: -90px;
+    }
+
+    .butClass3 {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+
+    .contFon2{
+        opacity: 0;
+    }
+    .containerHP{
+        min-width: 440px;
+        margin-top: -100px;
+        margin-left: 111px;
+    }
+    .containerHP p{
+        font-size: 10px;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+    .containerM{
+        gap: 45px;
+    }
+
+    .contFon5{
+        margin-top: -300px;
+    }
+    .contFon5 img{
+        width: 290px;
+        height:500px;
+    }
+    .cont5HP {
+        display: none;
+    }
+
+    .iconPp{
+        text-align: center;
     }
   }
